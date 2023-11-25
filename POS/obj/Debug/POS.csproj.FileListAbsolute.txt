@@ -1,0 +1,11 @@
+C:\Users\fernandohernandez\source\repos\POS\POS\bin\Debug\POS.exe.config
+C:\Users\fernandohernandez\source\repos\POS\POS\bin\Debug\POS.exe
+C:\Users\fernandohernandez\source\repos\POS\POS\bin\Debug\POS.pdb
+C:\Users\fernandohernandez\source\repos\POS\POS\obj\Debug\POS.csproj.AssemblyReference.cache
+C:\Users\fernandohernandez\source\repos\POS\POS\obj\Debug\POS.Form1.resources
+C:\Users\fernandohernandez\source\repos\POS\POS\obj\Debug\POS.Properties.Resources.resources
+C:\Users\fernandohernandez\source\repos\POS\POS\obj\Debug\POS.csproj.GenerateResource.cache
+C:\Users\fernandohernandez\source\repos\POS\POS\obj\Debug\POS.csproj.CoreCompileInputs.cache
+C:\Users\fernandohernandez\source\repos\POS\POS\obj\Debug\POS.exe
+C:\Users\fernandohernandez\source\repos\POS\POS\obj\Debug\POS.pdb
+C:\Users\fernandohernandez\source\repos\POS\POS\obj\Debug\POS.Menu.resources
