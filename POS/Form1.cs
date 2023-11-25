@@ -19,7 +19,7 @@ namespace POS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("Hola puta3");
+            Console.WriteLine("Hola puta4");
         }
     }
 }
