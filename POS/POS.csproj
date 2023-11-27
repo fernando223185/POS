@@ -105,5 +105,38 @@
   <ItemGroup>
     <None Include="Resources\Icono-Venta1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Mobile-Menu-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\IMO2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\new iconos\icon cerrar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\new iconos\icon maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\new iconos\icon minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\new iconos\icon restaurar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\producto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\venta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\compras.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -9,3 +9,14 @@ C:\Users\fernandohernandez\source\repos\POS\POS\obj\Debug\POS.csproj.CoreCompile
 C:\Users\fernandohernandez\source\repos\POS\POS\obj\Debug\POS.exe
 C:\Users\fernandohernandez\source\repos\POS\POS\obj\Debug\POS.pdb
 C:\Users\fernandohernandez\source\repos\POS\POS\obj\Debug\POS.Menu.resources
+C:\Users\fer22\POS\POS\bin\Debug\POS.exe.config
+C:\Users\fer22\POS\POS\bin\Debug\POS.exe
+C:\Users\fer22\POS\POS\bin\Debug\POS.pdb
+C:\Users\fer22\POS\POS\obj\Debug\POS.csproj.AssemblyReference.cache
+C:\Users\fer22\POS\POS\obj\Debug\POS.Form1.resources
+C:\Users\fer22\POS\POS\obj\Debug\POS.Menu.resources
+C:\Users\fer22\POS\POS\obj\Debug\POS.Properties.Resources.resources
+C:\Users\fer22\POS\POS\obj\Debug\POS.csproj.GenerateResource.cache
+C:\Users\fer22\POS\POS\obj\Debug\POS.csproj.CoreCompileInputs.cache
+C:\Users\fer22\POS\POS\obj\Debug\POS.exe
+C:\Users\fer22\POS\POS\obj\Debug\POS.pdb
