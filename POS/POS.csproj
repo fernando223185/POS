@@ -53,11 +53,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProd.Designer.cs">
+      <DependentUpon>FormProd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,6 +78,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -137,6 +152,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\compras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-basura-120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-basura-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-basura-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-lápiz-32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

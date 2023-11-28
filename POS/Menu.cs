@@ -61,5 +61,22 @@ namespace POS
             ReleaseCapture();
             SendMessage(this.Handle,0x112,0xf012,0);
         }
+
+        private void AbrirFormInPanel(object Formhijo) 
+        {
+            if (this.panelContendor.Controls.Count > 0)
+                this.panelContendor.Controls.RemoveAt(0);
+            Form fh = Formhijo as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panelContendor.Controls.Add(fh);
+            this.panelContendor.Tag = fh;
+            fh.Show();
+        }
+
+        private void btnprod_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new Productos());
+        }
     }
 }
