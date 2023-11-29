@@ -21,3 +21,4 @@ C:\Users\fer22\POS\POS\obj\Debug\POS.csproj.CoreCompileInputs.cache
 C:\Users\fer22\POS\POS\obj\Debug\POS.exe
 C:\Users\fer22\POS\POS\obj\Debug\POS.pdb
 C:\Users\fer22\POS\POS\obj\Debug\POS.Productos.resources
+C:\Users\fer22\POS\POS\obj\Debug\POS.FormProd.resources

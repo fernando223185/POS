@@ -121,7 +121,7 @@
             this.btnNewProd.TabIndex = 1;
             this.btnNewProd.Text = "NUEVO";
             this.btnNewProd.UseVisualStyleBackColor = false;
-
+            this.btnNewProd.Click += new System.EventHandler(this.btnNewProd_Click);
             // 
             // Productos
             // 

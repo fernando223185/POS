@@ -22,7 +22,10 @@ namespace POS
             this.Close();
         }
 
-
-
+        private void btnNewProd_Click(object sender, EventArgs e)
+        {
+            FormProd formForProd = new FormProd();
+            formForProd.Show();
+        }
     }
 }
