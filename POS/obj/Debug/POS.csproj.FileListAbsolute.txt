@@ -36,7 +36,6 @@ C:\Users\Daniel\Source\Repos\POS\POS\obj\Debug\POS.csproj.CoreCompileInputs.cach
 C:\Users\Daniel\Source\Repos\POS\POS\obj\Debug\POS.exe
 C:\Users\Daniel\Source\Repos\POS\POS\obj\Debug\POS.pdb
 C:\Users\Daniel\Source\Repos\POS\POS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\Daniel\Source\Repos\POS\POS\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Daniel\Source\Repos\POS\POS\bin\Debug\RestSharp.dll
 C:\Users\Daniel\Source\Repos\POS\POS\bin\Debug\System.Buffers.dll
 C:\Users\Daniel\Source\Repos\POS\POS\bin\Debug\System.Memory.dll
@@ -47,7 +46,6 @@ C:\Users\Daniel\Source\Repos\POS\POS\bin\Debug\System.Text.Json.dll
 C:\Users\Daniel\Source\Repos\POS\POS\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\Daniel\Source\Repos\POS\POS\bin\Debug\System.ValueTuple.dll
 C:\Users\Daniel\Source\Repos\POS\POS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-C:\Users\Daniel\Source\Repos\POS\POS\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Daniel\Source\Repos\POS\POS\bin\Debug\RestSharp.xml
 C:\Users\Daniel\Source\Repos\POS\POS\bin\Debug\System.Buffers.xml
 C:\Users\Daniel\Source\Repos\POS\POS\bin\Debug\System.Memory.xml
