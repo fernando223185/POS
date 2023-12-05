@@ -91,3 +91,5 @@ C:\Users\fer22\POS2\POS\obj\Debug\POS.csproj.CopyComplete
 C:\Users\fer22\POS2\POS\obj\Debug\POS.exe
 C:\Users\fer22\POS2\POS\obj\Debug\POS.pdb
 C:\Users\fer22\POS2\POS\obj\Debug\POS.Ventas.resources
+C:\Users\Daniel\Source\Repos\POS\POS\obj\Debug\POS.PuntoVenta.resources
+C:\Users\Daniel\Source\Repos\POS\POS\obj\Debug\POS.Ventas.resources

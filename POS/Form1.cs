@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using POS.Clases.Models;
+using POS.Clases;
 
 namespace POS
 {
     public partial class Form1 : Form
     {
-        Login login = new Login();
+        User login = new User();
         public Form1()
         {
             InitializeComponent();
@@ -23,8 +23,12 @@ namespace POS
         {
             string user = txtUsuario.Text;
             string pass = txtContra.Text;
-            login.GetLogin(user, pass);
-            //MessageBox.Show(login.GetLogin(user,pass));
+            int ok = login.GetLogin(user, pass);
+            if (ok == 1)
+            {
+                Menu menu = new Menu();
+                menu.Show();
+            }
         }
     }
 }
