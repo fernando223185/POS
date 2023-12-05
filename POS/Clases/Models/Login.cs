@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace POS.Clases.Models
 {
@@ -29,8 +30,8 @@ namespace POS.Clases.Models
 
             string jsonbody = JsonSerializer.Serialize(login);
             return jsonbody;
-            //var request = new RestRequest(urlApi).AddJsonBody(jsonbody);
-            //var response = 
+            var request = new RestRequest(urlApi).AddJsonBody(jsonbody);
+            MessageBox.Show(request.ToString()); 
         }
     }
 }

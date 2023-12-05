@@ -21,5 +21,18 @@ namespace POS
         {
             this.Close();
         }
+
+        private void btnImgLoad_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofdSeleccionar = new OpenFileDialog();
+            ofdSeleccionar.Filter = "Imagenes|*.jpg; *.png";
+            ofdSeleccionar.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            ofdSeleccionar.Title = "Seleccionar imagen";
+            if (ofdSeleccionar.ShowDialog() == DialogResult.OK) 
+            {
+                pbImagen.Image = Image.FromFile(ofdSeleccionar.FileName);
+
+            }
+        }
     }
 }

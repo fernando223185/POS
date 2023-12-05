@@ -78,5 +78,10 @@ namespace POS
         {
             AbrirFormInPanel(new Productos());
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new Ventas());
+        }
     }
 }

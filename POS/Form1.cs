@@ -23,7 +23,8 @@ namespace POS
         {
             string user = txtUsuario.Text;
             string pass = txtContra.Text;
-            MessageBox.Show(login.GetLogin(user,pass));
+            login.GetLogin(user, pass);
+            //MessageBox.Show(login.GetLogin(user,pass));
         }
     }
 }
