@@ -83,6 +83,7 @@
             this.txtContra.ForeColor = System.Drawing.Color.White;
             this.txtContra.Location = new System.Drawing.Point(327, 164);
             this.txtContra.Name = "txtContra";
+            this.txtContra.PasswordChar = '*';
             this.txtContra.Size = new System.Drawing.Size(385, 25);
             this.txtContra.TabIndex = 3;
             this.txtContra.Text = "Contraseña";

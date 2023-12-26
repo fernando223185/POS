@@ -12,6 +12,7 @@ namespace POS
 {
     public partial class Ventas : Form
     {
+        private string urlApi = "https://apiposfd22.azurewebsites.net/api/Art/Articulos";
         public Ventas()
         {
             InitializeComponent();
