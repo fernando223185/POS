@@ -33,31 +33,31 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtMinimunPrice = new System.Windows.Forms.TextBox();
+            this.txtDescription = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtTax = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtBarcode = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtListPrice = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCost = new System.Windows.Forms.TextBox();
             this.btnImgLoad = new System.Windows.Forms.Button();
-            this.pbImagen = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbUnit = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCode = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.ofdSeleccionar = new System.Windows.Forms.OpenFileDialog();
-            this.btnNewProd = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.btnNewProd = new System.Windows.Forms.Button();
+            this.pbImagen = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
@@ -101,28 +101,28 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.LightGray;
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.cmbStatus);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.txtMinimunPrice);
+            this.groupBox1.Controls.Add(this.txtDescription);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.txtTax);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txtBarcode);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtListPrice);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txtCost);
             this.groupBox1.Controls.Add(this.btnImgLoad);
             this.groupBox1.Controls.Add(this.pbImagen);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cmbUnit);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtCode);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.DimGray;
             this.groupBox1.Location = new System.Drawing.Point(12, 68);
@@ -141,13 +141,13 @@
             this.label12.TabIndex = 25;
             this.label12.Text = "Imagen:";
             // 
-            // comboBox2
+            // cmbStatus
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(295, 484);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(302, 26);
-            this.comboBox2.TabIndex = 24;
+            this.cmbStatus.FormattingEnabled = true;
+            this.cmbStatus.Location = new System.Drawing.Point(295, 484);
+            this.cmbStatus.Name = "cmbStatus";
+            this.cmbStatus.Size = new System.Drawing.Size(302, 26);
+            this.cmbStatus.TabIndex = 24;
             // 
             // label10
             // 
@@ -167,19 +167,19 @@
             this.label11.TabIndex = 21;
             this.label11.Text = "Precio Minimo:";
             // 
-            // textBox9
+            // txtMinimunPrice
             // 
-            this.textBox9.Location = new System.Drawing.Point(295, 427);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(302, 26);
-            this.textBox9.TabIndex = 20;
+            this.txtMinimunPrice.Location = new System.Drawing.Point(295, 427);
+            this.txtMinimunPrice.Name = "txtMinimunPrice";
+            this.txtMinimunPrice.Size = new System.Drawing.Size(302, 26);
+            this.txtMinimunPrice.TabIndex = 20;
             // 
-            // textBox5
+            // txtDescription
             // 
-            this.textBox5.Location = new System.Drawing.Point(26, 317);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(230, 26);
-            this.textBox5.TabIndex = 19;
+            this.txtDescription.Location = new System.Drawing.Point(26, 317);
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(230, 26);
+            this.txtDescription.TabIndex = 19;
             // 
             // label7
             // 
@@ -199,12 +199,12 @@
             this.label9.TabIndex = 17;
             this.label9.Text = "Impuesto:";
             // 
-            // textBox7
+            // txtTax
             // 
-            this.textBox7.Location = new System.Drawing.Point(295, 202);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(302, 26);
-            this.textBox7.TabIndex = 16;
+            this.txtTax.Location = new System.Drawing.Point(295, 202);
+            this.txtTax.Name = "txtTax";
+            this.txtTax.Size = new System.Drawing.Size(302, 26);
+            this.txtTax.TabIndex = 16;
             // 
             // label8
             // 
@@ -215,12 +215,12 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Codigo de Barras:";
             // 
-            // textBox6
+            // txtBarcode
             // 
-            this.textBox6.Location = new System.Drawing.Point(295, 145);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(302, 26);
-            this.textBox6.TabIndex = 14;
+            this.txtBarcode.Location = new System.Drawing.Point(295, 145);
+            this.txtBarcode.Name = "txtBarcode";
+            this.txtBarcode.Size = new System.Drawing.Size(302, 26);
+            this.txtBarcode.TabIndex = 14;
             // 
             // label5
             // 
@@ -231,12 +231,12 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Precio Lista:";
             // 
-            // textBox3
+            // txtListPrice
             // 
-            this.textBox3.Location = new System.Drawing.Point(295, 373);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(302, 26);
-            this.textBox3.TabIndex = 11;
+            this.txtListPrice.Location = new System.Drawing.Point(295, 373);
+            this.txtListPrice.Name = "txtListPrice";
+            this.txtListPrice.Size = new System.Drawing.Size(302, 26);
+            this.txtListPrice.TabIndex = 11;
             // 
             // label6
             // 
@@ -247,12 +247,12 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Costo:";
             // 
-            // textBox4
+            // txtCost
             // 
-            this.textBox4.Location = new System.Drawing.Point(295, 317);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(302, 26);
-            this.textBox4.TabIndex = 8;
+            this.txtCost.Location = new System.Drawing.Point(295, 317);
+            this.txtCost.Name = "txtCost";
+            this.txtCost.Size = new System.Drawing.Size(302, 26);
+            this.txtCost.TabIndex = 8;
             // 
             // btnImgLoad
             // 
@@ -264,22 +264,13 @@
             this.btnImgLoad.UseVisualStyleBackColor = true;
             this.btnImgLoad.Click += new System.EventHandler(this.btnImgLoad_Click);
             // 
-            // pbImagen
+            // cmbUnit
             // 
-            this.pbImagen.Location = new System.Drawing.Point(26, 93);
-            this.pbImagen.Name = "pbImagen";
-            this.pbImagen.Size = new System.Drawing.Size(230, 151);
-            this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbImagen.TabIndex = 6;
-            this.pbImagen.TabStop = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(295, 258);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(302, 26);
-            this.comboBox1.TabIndex = 5;
+            this.cmbUnit.FormattingEnabled = true;
+            this.cmbUnit.Location = new System.Drawing.Point(295, 258);
+            this.cmbUnit.Name = "cmbUnit";
+            this.cmbUnit.Size = new System.Drawing.Size(302, 26);
+            this.cmbUnit.TabIndex = 5;
             // 
             // label4
             // 
@@ -290,12 +281,12 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Codigo:";
             // 
-            // textBox2
+            // txtCode
             // 
-            this.textBox2.Location = new System.Drawing.Point(295, 88);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(302, 26);
-            this.textBox2.TabIndex = 3;
+            this.txtCode.Location = new System.Drawing.Point(295, 88);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.Size = new System.Drawing.Size(302, 26);
+            this.txtCode.TabIndex = 3;
             // 
             // label3
             // 
@@ -315,33 +306,16 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Unidad:";
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(295, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(302, 26);
-            this.textBox1.TabIndex = 0;
+            this.txtName.Location = new System.Drawing.Point(295, 32);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(302, 26);
+            this.txtName.TabIndex = 0;
             // 
             // ofdSeleccionar
             // 
             this.ofdSeleccionar.FileName = "openFileDialog1";
-            // 
-            // btnNewProd
-            // 
-            this.btnNewProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnNewProd.FlatAppearance.BorderSize = 0;
-            this.btnNewProd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnNewProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewProd.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewProd.ForeColor = System.Drawing.Color.White;
-            this.btnNewProd.Image = global::POS.Properties.Resources.producto;
-            this.btnNewProd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNewProd.Location = new System.Drawing.Point(337, 601);
-            this.btnNewProd.Name = "btnNewProd";
-            this.btnNewProd.Size = new System.Drawing.Size(250, 40);
-            this.btnNewProd.TabIndex = 2;
-            this.btnNewProd.Text = "GUARDAR";
-            this.btnNewProd.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
@@ -351,7 +325,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::POS.Properties.Resources.producto;
+            this.button3.Image = global::POS.Properties.Resources.icons8_cancelar_30;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(38, 601);
             this.button3.Name = "button3";
@@ -359,6 +333,33 @@
             this.button3.TabIndex = 6;
             this.button3.Text = "CANCELAR";
             this.button3.UseVisualStyleBackColor = false;
+            // 
+            // btnNewProd
+            // 
+            this.btnNewProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnNewProd.FlatAppearance.BorderSize = 0;
+            this.btnNewProd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnNewProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewProd.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewProd.ForeColor = System.Drawing.Color.White;
+            this.btnNewProd.Image = global::POS.Properties.Resources.icons8_guardar_30;
+            this.btnNewProd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNewProd.Location = new System.Drawing.Point(337, 601);
+            this.btnNewProd.Name = "btnNewProd";
+            this.btnNewProd.Size = new System.Drawing.Size(250, 40);
+            this.btnNewProd.TabIndex = 2;
+            this.btnNewProd.Text = "GUARDAR";
+            this.btnNewProd.UseVisualStyleBackColor = false;
+            this.btnNewProd.Click += new System.EventHandler(this.btnNewProd_Click);
+            // 
+            // pbImagen
+            // 
+            this.pbImagen.Location = new System.Drawing.Point(26, 93);
+            this.pbImagen.Name = "pbImagen";
+            this.pbImagen.Size = new System.Drawing.Size(230, 151);
+            this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbImagen.TabIndex = 6;
+            this.pbImagen.TabStop = false;
             // 
             // FormProd
             // 
@@ -390,29 +391,29 @@
         private System.Windows.Forms.Label btnClose;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCode;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.ComboBox cmbUnit;
         private System.Windows.Forms.PictureBox pbImagen;
         private System.Windows.Forms.Button btnImgLoad;
         private System.Windows.Forms.OpenFileDialog ofdSeleccionar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtListPrice;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCost;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtBarcode;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtTax;
+        private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbStatus;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtMinimunPrice;
         private System.Windows.Forms.Button btnNewProd;
         private System.Windows.Forms.Button button3;
     }

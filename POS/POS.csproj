@@ -79,6 +79,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Models\Art.cs" />
     <Compile Include="Clases\Models\Users.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -219,6 +220,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\icons8-lápiz-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-ingredientes-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-guardar-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-guardar-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-cancelar-30.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
