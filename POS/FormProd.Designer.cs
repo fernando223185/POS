@@ -32,6 +32,11 @@
             this.btnClose = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -51,11 +56,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.ofdSeleccionar = new System.Windows.Forms.OpenFileDialog();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.btnNewProd = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -132,6 +132,48 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Caracteristicas";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(23, 67);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(69, 18);
+            this.label12.TabIndex = 25;
+            this.label12.Text = "Imagen:";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(295, 484);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(302, 26);
+            this.comboBox2.TabIndex = 24;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(292, 462);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(59, 18);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "Estatus:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(292, 406);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(118, 18);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "Precio Minimo:";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(295, 427);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(302, 26);
+            this.textBox9.TabIndex = 20;
+            // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(26, 317);
@@ -144,9 +186,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(23, 296);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 18);
+            this.label7.Size = new System.Drawing.Size(199, 18);
             this.label7.TabIndex = 18;
-            this.label7.Text = "Descripcion:";
+            this.label7.Text = "Descripcion del Producto:";
             // 
             // label9
             // 
@@ -283,48 +325,6 @@
             // ofdSeleccionar
             // 
             this.ofdSeleccionar.FileName = "openFileDialog1";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(292, 462);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(59, 18);
-            this.label10.TabIndex = 23;
-            this.label10.Text = "Estatus:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(292, 406);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(118, 18);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "Precio Minimo:";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(295, 427);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(302, 26);
-            this.textBox9.TabIndex = 20;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(295, 484);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(302, 26);
-            this.comboBox2.TabIndex = 24;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(23, 67);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(69, 18);
-            this.label12.TabIndex = 25;
-            this.label12.Text = "Imagen:";
             // 
             // btnNewProd
             // 
