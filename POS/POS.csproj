@@ -233,5 +233,8 @@
   <ItemGroup>
     <None Include="images\icons8-cancelar-30.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-carrito-de-compras-30.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

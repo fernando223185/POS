@@ -35,7 +35,7 @@ namespace POS.Clases.Models
                 Descripcion = description,
                 Impuesto1 = tax,
                 Unidad = unit,
-                Categoria = "",
+                Categoria = 1,
                 Costo = cost,
                 PrecioLista = listPrice,
                 PrecioMinimo = minimunPrice,
@@ -47,7 +47,6 @@ namespace POS.Clases.Models
             var request = new RestRequest();
 
             request.AddJsonBody(json, "application/json");
-            MessageBox.Show(json.ToString());
             try 
             {
                 var response = art.Post(request);
@@ -60,6 +59,7 @@ namespace POS.Clases.Models
                 }
                 else
                 {
+                    MessageBox.Show("Entro else");
                     apiResponse = JsonSerializer.Deserialize<ResponseApi>(response.Content);
                     MessageBox.Show(apiResponse.response);
                     //MessageBox.Show(response.Content);
