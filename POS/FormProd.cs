@@ -53,14 +53,16 @@ namespace POS
             int ok = art.NewArt(name,code,barcode,tax,unit,cost,listPrice,minimunPrice,idStatus,description);
             if (ok == 0)
             {
-                MessageBox.Show("Se inserto"); 
-            }
-            else
-            {
-                MessageBox.Show("Problema al insertar");
-            }
+                txtName.Text = string.Empty;
+                txtCode.Text = string.Empty;
+                txtBarcode.Text = string.Empty;
+                txtListPrice.Text = string.Empty;
+                txtTax.Text = string.Empty;
+                txtCost.Text = string.Empty;
+                txtMinimunPrice.Text = string.Empty;
+                txtDescription.Text = string.Empty;
 
-
+            }
         }
     }
 }
