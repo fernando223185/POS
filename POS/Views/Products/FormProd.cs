@@ -14,9 +14,18 @@ namespace POS
     public partial class FormProd : Form
     {
         Art art = new Art();
-        public FormProd()
+        public FormProd(int opc)
         {
             InitializeComponent();
+            if (opc == 1)
+            {
+                this.lblTitulo.Text = "Nuevo Articulo";
+            }
+            if (opc == 2)
+            {
+                this.lblTitulo.Text = "Editar Articulo";
+            }
+            
         }
 
         private void label2_Click(object sender, EventArgs e)

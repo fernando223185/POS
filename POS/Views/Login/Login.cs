@@ -11,10 +11,10 @@ using POS.Clases;
 
 namespace POS
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
         User login = new User();
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }

@@ -81,54 +81,54 @@
   <ItemGroup>
     <Compile Include="Clases\Models\Art.cs" />
     <Compile Include="Clases\Models\Users.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Views\Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Views\Login\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormProd.cs">
+    <Compile Include="Views\Products\FormProd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormProd.Designer.cs">
+    <Compile Include="Views\Products\FormProd.Designer.cs">
       <DependentUpon>FormProd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu.cs">
+    <Compile Include="Views\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
+    <Compile Include="Views\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Productos.cs">
+    <Compile Include="Views\Products\Productos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Productos.Designer.cs">
+    <Compile Include="Views\Products\Productos.Designer.cs">
       <DependentUpon>Productos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PuntoVenta.cs">
+    <Compile Include="Views\Ventas\PuntoVenta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PuntoVenta.Designer.cs">
+    <Compile Include="Views\Ventas\PuntoVenta.Designer.cs">
       <DependentUpon>PuntoVenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventas.cs">
+    <Compile Include="Views\Ventas\Ventas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventas.Designer.cs">
+    <Compile Include="Views\Ventas\Ventas.Designer.cs">
       <DependentUpon>Ventas.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Login\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormProd.resx">
+    <EmbeddedResource Include="Views\Products\FormProd.resx">
       <DependentUpon>FormProd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
+    <EmbeddedResource Include="Views\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Productos.resx">
+    <EmbeddedResource Include="Views\Products\Productos.resx">
       <DependentUpon>Productos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -141,10 +141,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="PuntoVenta.resx">
+    <EmbeddedResource Include="Views\Ventas\PuntoVenta.resx">
       <DependentUpon>PuntoVenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventas.resx">
+    <EmbeddedResource Include="Views\Ventas\Ventas.resx">
       <DependentUpon>Ventas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -235,6 +235,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\icons8-carrito-de-compras-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Customers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

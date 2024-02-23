@@ -24,7 +24,13 @@ namespace POS
 
         private void btnNewProd_Click(object sender, EventArgs e)
         {
-            FormProd formForProd = new FormProd();
+            FormProd formForProd = new FormProd(1);
+            formForProd.Show();
+        }
+
+        private void btnEditProduct_Click(object sender, EventArgs e)
+        {
+            FormProd formForProd = new FormProd(2);
             formForProd.Show();
         }
     }
