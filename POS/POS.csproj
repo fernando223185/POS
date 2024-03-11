@@ -80,7 +80,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Models\Art.cs" />
+    <Compile Include="Clases\Models\Customers.cs" />
     <Compile Include="Clases\Models\Users.cs" />
+    <Compile Include="Views\Customers\Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Customers\Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +126,9 @@
     <Compile Include="Views\Ventas\Ventas.Designer.cs">
       <DependentUpon>Ventas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\Customers\Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -236,9 +246,7 @@
   <ItemGroup>
     <None Include="images\icons8-carrito-de-compras-30.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Customers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="images\icons8-users-48.png" />
   </ItemGroup>
