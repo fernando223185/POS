@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.Json;
 using System.Windows.Forms;
 using POS.Clases;
 
@@ -19,15 +13,33 @@ namespace POS
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
             string user = txtUsuario.Text;
             string pass = txtContra.Text;
-            int ok = login.GetLogin(user, pass);
-            if (ok == 1)
+            var response = await login.GetLogin(user, pass);
+            var apiResponse = JsonSerializer.Deserialize<User.ResponseApi>(response.Content);
+            if (apiResponse != null)
             {
-                Menu menu = new Menu();
-                menu.Show();
+                if (apiResponse.error == 0)
+                {
+                    var result = MessageBox.Show(apiResponse.message, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    if (result == DialogResult.OK)
+                    {
+                        var nuevaVentana = new Menu();
+                        nuevaVentana.Show();
+                        this.Hide();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(apiResponse.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("La respuesta no se pudo deserializar correctamente.");
             }
         }
     }

@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Text.Json.Serialization;
-using System.Windows.Forms;
+using System.Threading.Tasks;
 using RestSharp;
 
 namespace POS.Clases
@@ -23,52 +18,40 @@ namespace POS.Clases
         public DateTime DateRegistro { get; set; }
         public int IdEstatus { get; set; }
 
-        private string urlApi = "https://apiposfd22.azurewebsites.net/api/User/Login"; //Url para la api de users
+        private string urlApi = "https://localhost:7254/api/Login/login"; //Url para la api de users
 
         public class ResponseApi
         {
-            public bool success { get; set; }
-            public int ok { get; set; }
-            public string response { get; set; }
+            public string message { get; set; }
+            public int error { get; set; }
+            public User user { get; set; }
         }
         public User()
         {
-            
+
         }
-        public int GetLogin(string username, string password)
+        public async Task<RestResponse> GetLogin(string username, string password)
         {
-            ResponseApi apiResponse;
             var client = new RestClient(urlApi);
+            var request = new RestRequest();
+            request.Method = Method.Post;
             var parametros = new
             {
                 nameUser = username,
                 pass = password
             };
-            string jsonbody = JsonSerializer.Serialize(parametros);
-            var request = new RestRequest();
-            request.AddJsonBody(jsonbody, "application/json");
+
+            request.AddJsonBody(parametros);
+
             try
             {
-                var response = client.Post(request);
-                if (response.IsSuccessful)
-                {
-                    apiResponse = JsonSerializer.Deserialize<ResponseApi>(response.Content);
-                    MessageBox.Show(apiResponse.response);
-                    //MessageBox.Show(response.Content);
-                    return apiResponse.ok;
-                }
-                else
-                {
-                    apiResponse = JsonSerializer.Deserialize<ResponseApi>(response.Content);
-                    MessageBox.Show(apiResponse.response);
-                    //MessageBox.Show(response.Content);
-                    return apiResponse.ok;
-                }
+
+                var response = await client.ExecuteAsync(request);
+                return (RestResponse)response;
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
-                return 0;
+                return null;
             }
         }
     }

@@ -239,5 +239,14 @@
   <ItemGroup>
     <Folder Include="Views\Customers\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-users-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-lock-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Logotipo_empresa.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

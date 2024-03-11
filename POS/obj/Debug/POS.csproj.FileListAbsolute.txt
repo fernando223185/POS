@@ -80,7 +80,6 @@ C:\Users\fer22\POS2\POS\bin\Debug\System.Text.Json.xml
 C:\Users\fer22\POS2\POS\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\fer22\POS2\POS\bin\Debug\System.ValueTuple.xml
 C:\Users\fer22\POS2\POS\obj\Debug\POS.csproj.AssemblyReference.cache
-C:\Users\fer22\POS2\POS\obj\Debug\POS.Form1.resources
 C:\Users\fer22\POS2\POS\obj\Debug\POS.FormProd.resources
 C:\Users\fer22\POS2\POS\obj\Debug\POS.Menu.resources
 C:\Users\fer22\POS2\POS\obj\Debug\POS.Productos.resources
@@ -166,3 +165,4 @@ C:\Users\danie\source\repos\POS\POS\obj\Debug\POS.csproj.CopyComplete
 C:\Users\danie\source\repos\POS\POS\obj\Debug\POS.exe
 C:\Users\danie\source\repos\POS\POS\obj\Debug\POS.pdb
 C:\Users\danie\source\repos\POS\POS\obj\Debug\POS.Login.resources
+C:\Users\fer22\POS2\POS\obj\Debug\POS.Login.resources
