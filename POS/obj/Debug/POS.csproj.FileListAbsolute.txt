@@ -166,3 +166,4 @@ C:\Users\danie\source\repos\POS\POS\obj\Debug\POS.exe
 C:\Users\danie\source\repos\POS\POS\obj\Debug\POS.pdb
 C:\Users\danie\source\repos\POS\POS\obj\Debug\POS.Login.resources
 C:\Users\fer22\POS2\POS\obj\Debug\POS.Login.resources
+C:\Users\fer22\POS2\POS\obj\Debug\POS.Views.Customers.Customer.resources
