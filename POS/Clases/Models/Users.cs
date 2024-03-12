@@ -26,10 +26,6 @@ namespace POS.Clases
             public int error { get; set; }
             public User user { get; set; }
         }
-        public User()
-        {
-
-        }
         public async Task<RestResponse> GetLogin(string username, string password)
         {
             var client = new RestClient(urlApi);
@@ -45,7 +41,6 @@ namespace POS.Clases
 
             try
             {
-
                 var response = await client.ExecuteAsync(request);
                 return (RestResponse)response;
             }

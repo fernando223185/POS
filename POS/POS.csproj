@@ -37,6 +37,9 @@
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="RestSharp, Version=110.2.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
       <HintPath>..\packages\RestSharp.110.2.0\lib\net471\RestSharp.dll</HintPath>
     </Reference>
@@ -80,12 +83,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Models\Art.cs" />
-    <Compile Include="Clases\Models\Customers.cs" />
+    <Compile Include="Clases\Models\CustomersClass.cs" />
     <Compile Include="Clases\Models\Users.cs" />
-    <Compile Include="Views\Customers\Customer.cs">
+    <Compile Include="Views\CRM\Customer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Customers\Customer.Designer.cs">
+    <Compile Include="Views\CRM\Customer.Designer.cs">
       <DependentUpon>Customer.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Login\Login.cs">
@@ -126,7 +129,7 @@
     <Compile Include="Views\Ventas\Ventas.Designer.cs">
       <DependentUpon>Ventas.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\Customers\Customer.resx">
+    <EmbeddedResource Include="Views\CRM\Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Login\Login.resx">

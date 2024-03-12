@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Text.Json;
+using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 using System.Windows.Forms;
 using POS.Clases;
 
@@ -18,12 +20,12 @@ namespace POS
             string user = txtUsuario.Text;
             string pass = txtContra.Text;
             var response = await login.GetLogin(user, pass);
-            var apiResponse = JsonSerializer.Deserialize<User.ResponseApi>(response.Content);
+            var apiResponse = System.Text.Json.JsonSerializer.Deserialize<User.ResponseApi>(response.Content);
             if (apiResponse != null)
             {
                 if (apiResponse.error == 0)
                 {
-                    var result = MessageBox.Show(apiResponse.message, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    var result = MessageBox.Show(apiResponse.message, "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     if (result == DialogResult.OK)
                     {
