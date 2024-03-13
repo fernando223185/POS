@@ -37,5 +37,15 @@ namespace POS.Views.CRM
                 this.TxtNumExt.Text = apiResponse.exteriorNumber;
             }
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
