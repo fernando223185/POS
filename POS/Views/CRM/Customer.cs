@@ -3,6 +3,7 @@ using System.Text.Json;
 using System.Windows.Forms;
 using POS.Clases;
 using POS.Clases.Models;
+using POS.Views.CRM;
 
 namespace POS.Views.Customers
 {
@@ -26,9 +27,6 @@ namespace POS.Views.Customers
 
             dataCte.Rows.Clear();
             var customers = await customer.GetCustomers();
-            Console.WriteLine("JSON: " + customers.Content);
-            //MessageBox.Show("JSON: "+customers.Content);
-
             var apiResponse = JsonSerializer.Deserialize<CustomersClass.CustomersResponse>(customers.Content);
 
             if (dataCte.Columns.Count == 0)
@@ -48,6 +46,21 @@ namespace POS.Views.Customers
                 dataCte.Rows.Add(customer.id, customer.name, customer.lastName, customer.phone, customer.email, customer.address, customer.taxId, customer.zipCode);
             } 
 
+        }
+
+        private void btnEditCustomer_Click(object sender, EventArgs e)
+        {
+            if (dataCte.SelectedCells.Count > 0)
+            {
+                int rowIndex = dataCte.SelectedCells[0].RowIndex;
+                object idValue = dataCte.Rows[rowIndex].Cells["id"].Value;
+                if (idValue != null)
+                {
+                    int id = Convert.ToInt32(idValue);
+                    FormCustomer form = new FormCustomer(id);
+                    form.Show();
+                }
+            }
         }
     }
 }

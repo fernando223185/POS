@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace POS.Clases.Models
 {
@@ -62,5 +63,25 @@ namespace POS.Clases.Models
                 return null;
             }
         }
+
+        public async Task<RestResponse> GetCustomerID(int id)
+        {
+            var customer = new RestClient(urlApi + "find_by_id/" + id);
+            var request = new RestRequest();
+            request.Method = Method.Get;
+
+            try
+            {
+
+                var response = await customer.ExecuteAsync(request);
+                
+                return (RestResponse)response;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
     }
 }

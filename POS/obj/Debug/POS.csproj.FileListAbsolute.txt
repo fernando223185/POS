@@ -169,3 +169,4 @@ C:\Users\fer22\POS2\POS\obj\Debug\POS.Login.resources
 C:\Users\fer22\POS2\POS\obj\Debug\POS.Views.Customers.Customer.resources
 C:\Users\fer22\POS2\POS\bin\Debug\Newtonsoft.Json.dll
 C:\Users\fer22\POS2\POS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\fer22\POS2\POS\obj\Debug\POS.Views.CRM.FormCustomer.resources

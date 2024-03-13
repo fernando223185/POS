@@ -31,7 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button3 = new System.Windows.Forms.Button();
-            this.btnEditProduct = new System.Windows.Forms.Button();
+            this.btnEditCustomer = new System.Windows.Forms.Button();
             this.dataCte = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.btnNewProd = new System.Windows.Forms.Button();
@@ -56,22 +56,23 @@
             this.button3.Text = "ELIMINAR";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // btnEditProduct
+            // btnEditCustomer
             // 
-            this.btnEditProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnEditProduct.FlatAppearance.BorderSize = 0;
-            this.btnEditProduct.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnEditProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditProduct.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditProduct.ForeColor = System.Drawing.Color.White;
-            this.btnEditProduct.Image = global::POS.Properties.Resources.icons8_lápiz_32;
-            this.btnEditProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditProduct.Location = new System.Drawing.Point(408, 523);
-            this.btnEditProduct.Name = "btnEditProduct";
-            this.btnEditProduct.Size = new System.Drawing.Size(250, 40);
-            this.btnEditProduct.TabIndex = 10;
-            this.btnEditProduct.Text = "EDITAR";
-            this.btnEditProduct.UseVisualStyleBackColor = false;
+            this.btnEditCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnEditCustomer.FlatAppearance.BorderSize = 0;
+            this.btnEditCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnEditCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditCustomer.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditCustomer.ForeColor = System.Drawing.Color.White;
+            this.btnEditCustomer.Image = global::POS.Properties.Resources.icons8_lápiz_32;
+            this.btnEditCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditCustomer.Location = new System.Drawing.Point(408, 523);
+            this.btnEditCustomer.Name = "btnEditCustomer";
+            this.btnEditCustomer.Size = new System.Drawing.Size(250, 40);
+            this.btnEditCustomer.TabIndex = 10;
+            this.btnEditCustomer.Text = "EDITAR";
+            this.btnEditCustomer.UseVisualStyleBackColor = false;
+            this.btnEditCustomer.Click += new System.EventHandler(this.btnEditCustomer_Click);
             // 
             // dataCte
             // 
@@ -154,7 +155,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1050, 600);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.btnEditProduct);
+            this.Controls.Add(this.btnEditCustomer);
             this.Controls.Add(this.dataCte);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnNewProd);
@@ -171,7 +172,7 @@
         #endregion
 
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button btnEditProduct;
+        private System.Windows.Forms.Button btnEditCustomer;
         private System.Windows.Forms.DataGridView dataCte;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnNewProd;
