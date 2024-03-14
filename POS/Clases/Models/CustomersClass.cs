@@ -37,6 +37,15 @@ namespace POS.Clases.Models
             public List<CustomersClass> data { get; set; }
         }
 
+        public class Response
+        {
+            public string message { get; set; }
+            public int error { get; set; }
+            public CustomersClass user { get; set; }
+        }
+
+
+
 
         public async Task<RestResponse> GetCustomers()
         {
@@ -75,6 +84,28 @@ namespace POS.Clases.Models
 
                 var response = await customer.ExecuteAsync(request);
                 
+                return (RestResponse)response;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        public async Task<RestResponse> UpdateCustomer(Object parameters)
+        {
+            var customer = new RestClient(urlApi + "update/");
+            var request = new RestRequest();
+            request.Method = Method.Put;
+
+            request.AddJsonBody(parameters);
+
+
+            try
+            {
+
+                var response = await customer.ExecuteAsync(request);
+
                 return (RestResponse)response;
             }
             catch (Exception ex)
