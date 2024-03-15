@@ -47,18 +47,13 @@ namespace POS.Clases.Models
 
 
 
-        public async Task<RestResponse> GetCustomers()
+        public async Task<RestResponse> GetCustomers(Object parameters)
         {
             var customer = new RestClient(urlApi+"List");
             var request = new RestRequest();
             request.Method = Method.Post;
-            var parametros = new
-            {
-                page = 1,
-                search = ""
-            };
 
-            request.AddJsonBody(parametros);
+            request.AddJsonBody(parameters);
 
             try
             {
@@ -100,6 +95,26 @@ namespace POS.Clases.Models
 
             request.AddJsonBody(parameters);
 
+            try
+            {
+
+                var response = await customer.ExecuteAsync(request);
+
+                return (RestResponse)response;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        public async Task<RestResponse> CreateCustomer(Object parameters)
+        {
+            var customer = new RestClient(urlApi + "create");
+            var request = new RestRequest();
+            request.Method = Method.Post;
+
+            request.AddJsonBody(parameters);
 
             try
             {

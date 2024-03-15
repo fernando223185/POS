@@ -258,7 +258,9 @@
   <ItemGroup>
     <None Include="images\icons8-carrito-de-compras-30.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="images\icons8-search-48.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="images\icons8-users-48.png" />
   </ItemGroup>

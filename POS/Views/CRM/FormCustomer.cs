@@ -1,4 +1,6 @@
 ﻿using POS.Clases.Models;
+using POS.Views.Customers;
+using RestSharp;
 using System;
 using System.Security.Cryptography.X509Certificates;
 using System.Text.Json;
@@ -14,13 +16,18 @@ namespace POS.Views.CRM
         public FormCustomer(int id)
         {
             InitializeComponent();
-            getCustomerID(id);
+            if (id > 0)
+            {
+                getCustomerID(id);
+            }
             ID = id;
 
+            this.FormClosed += FormCustomer_FormClosed;
         }
 
         private async void getCustomerID(int id)
         {
+
             var customerInfo = await customer.GetCustomerID(id);
             var apiResponse = JsonSerializer.Deserialize<CustomersClass>(customerInfo.Content);
             
@@ -52,25 +59,52 @@ namespace POS.Views.CRM
 
         private async void btnNewProd_Click(object sender, EventArgs e)
         {
-            var parameters = new 
-            {
-                id = ID,
-                code = this.TxtCode.Text,
-                name = this.TxtName.Text,
-                lastName = this.TxtLastName.Text,
-                phone = this.TxtPhone.Text,
-                email = this.TxtEmail.Text,
-                address = this.TxtAddress.Text,
-                taxId = this.TxtTaxId.Text,
-                zipCode = this.TxtZipCode.Text,
-                commentary = this.TxtComments.Text,
-                countryId = 1,
-                stateId = 0,
-                interiornumber = this.TxtNumInt.Text,
-                exteriorNumber = this.TxtNumExt.Text,
-            };
+            var result = new RestResponse();
 
-            var result = await customer.UpdateCustomer(parameters);
+            if (ID > 0)
+            {
+                var parameters = new
+                {
+                    id = ID,
+                    code = this.TxtCode.Text,
+                    name = this.TxtName.Text,
+                    lastName = this.TxtLastName.Text,
+                    phone = this.TxtPhone.Text,
+                    email = this.TxtEmail.Text,
+                    address = this.TxtAddress.Text,
+                    taxId = this.TxtTaxId.Text,
+                    zipCode = this.TxtZipCode.Text,
+                    commentary = this.TxtComments.Text,
+                    countryId = 1,
+                    stateId = 0,
+                    interiornumber = this.TxtNumInt.Text,
+                    exteriorNumber = this.TxtNumExt.Text,
+                };
+
+                result = await customer.UpdateCustomer(parameters);
+            }
+            else 
+            {
+                var parameters = new
+                {
+                    code = this.TxtCode.Text,
+                    name = this.TxtName.Text,
+                    lastName = this.TxtLastName.Text,
+                    phone = this.TxtPhone.Text,
+                    email = this.TxtEmail.Text,
+                    address = this.TxtAddress.Text,
+                    taxId = this.TxtTaxId.Text,
+                    zipCode = this.TxtZipCode.Text,
+                    commentary = this.TxtComments.Text,
+                    countryId = 1,
+                    stateId = 0,
+                    interiornumber = this.TxtNumInt.Text,
+                    exteriorNumber = this.TxtNumExt.Text,
+                };
+
+                result = await customer.CreateCustomer(parameters);
+            }
+
             var response = JsonSerializer.Deserialize<CustomersClass.Response>(result.Content);
             if (response.error == 0)
             {
@@ -85,6 +119,15 @@ namespace POS.Views.CRM
                 }
             }
 
+        }
+
+        private void FormCustomer_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Customer customerForm = Application.OpenForms["Customer"] as Customer;
+            if (customerForm != null)
+            {
+                customerForm.getCustomers(); 
+            }
         }
     }
 }
