@@ -28,13 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataProducts = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
             this.btnEditProduct = new System.Windows.Forms.Button();
             this.btnNewProd = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataProducts)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -61,15 +63,37 @@
             this.label2.Text = "X";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // dataGridView1
+            // dataProducts
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 52);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1005, 457);
-            this.dataGridView1.TabIndex = 3;
+            this.dataProducts.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dataProducts.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataProducts.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataProducts.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataProducts.ColumnHeadersHeight = 50;
+            this.dataProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataProducts.EnableHeadersVisualStyles = false;
+            this.dataProducts.Location = new System.Drawing.Point(67, 121);
+            this.dataProducts.Name = "dataProducts";
+            this.dataProducts.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataProducts.RowHeadersVisible = false;
+            this.dataProducts.RowHeadersWidth = 60;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataProducts.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataProducts.Size = new System.Drawing.Size(904, 383);
+            this.dataProducts.TabIndex = 3;
             // 
             // button3
             // 
@@ -81,7 +105,7 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = global::POS.Properties.Resources.icons8_basura_30;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(145, 535);
+            this.button3.Location = new System.Drawing.Point(137, 535);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(250, 40);
             this.button3.TabIndex = 5;
@@ -98,7 +122,7 @@
             this.btnEditProduct.ForeColor = System.Drawing.Color.White;
             this.btnEditProduct.Image = global::POS.Properties.Resources.icons8_lápiz_32;
             this.btnEditProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditProduct.Location = new System.Drawing.Point(416, 535);
+            this.btnEditProduct.Location = new System.Drawing.Point(408, 535);
             this.btnEditProduct.Name = "btnEditProduct";
             this.btnEditProduct.Size = new System.Drawing.Size(250, 40);
             this.btnEditProduct.TabIndex = 4;
@@ -116,7 +140,7 @@
             this.btnNewProd.ForeColor = System.Drawing.Color.White;
             this.btnNewProd.Image = global::POS.Properties.Resources.producto;
             this.btnNewProd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNewProd.Location = new System.Drawing.Point(686, 535);
+            this.btnNewProd.Location = new System.Drawing.Point(678, 535);
             this.btnNewProd.Name = "btnNewProd";
             this.btnNewProd.Size = new System.Drawing.Size(250, 40);
             this.btnNewProd.TabIndex = 1;
@@ -131,14 +155,14 @@
             this.ClientSize = new System.Drawing.Size(1050, 600);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnEditProduct);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataProducts);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnNewProd);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Productos";
             this.Text = "Productos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataProducts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,7 +173,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnNewProd;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataProducts;
         private System.Windows.Forms.Button btnEditProduct;
         private System.Windows.Forms.Button button3;
     }

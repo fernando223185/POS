@@ -41,7 +41,7 @@ namespace POS.Clases.Models
         {
             public string message { get; set; }
             public int error { get; set; }
-            public CustomersClass user { get; set; }
+            public CustomersClass data { get; set; }
         }
 
 
@@ -89,7 +89,7 @@ namespace POS.Clases.Models
 
         public async Task<RestResponse> UpdateCustomer(Object parameters)
         {
-            var customer = new RestClient(urlApi + "update/");
+            var customer = new RestClient(urlApi + "update");
             var request = new RestRequest();
             request.Method = Method.Put;
 

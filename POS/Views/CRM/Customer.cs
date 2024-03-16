@@ -18,11 +18,6 @@ namespace POS.Views.Customers
 
         }
 
-/*        private void Customer_Load(object sender, EventArgs e)
-        {
-            getCustomers();
-        } */
-
         public async void getCustomers()
         {
             var parametros = new
@@ -132,6 +127,11 @@ namespace POS.Views.Customers
             {
                 dataCte.Rows.Add(customer.id, customer.name, customer.lastName, customer.phone, customer.email, customer.address, customer.taxId, customer.zipCode);
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

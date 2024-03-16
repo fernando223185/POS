@@ -12,68 +12,88 @@ namespace POS.Clases.Models
 {
     public class Art
     {
-        private string urlApi = "https://apiposfd22.azurewebsites.net/api/Art";
+        private string urlApi = "https://localhost:7254/api/Product/";
+        public int id { get; set; }
+        public string name { get; set; }
+        public string description { get; set; }
+        public string code { get; set; }
+        public string barcode { get; set; }
+        public decimal price { get; set; }
 
-        public class ResponseApi
+        public class ProductsResponse
         {
-            public bool succes { get; set; }
-            public int ok { get; set; }
-            public string response { get; set; }
-
+            public int page { get; set; }
+            public int totalPages { get; set; }
+            public int sizePage { get; set; }
+            public List<Art> data { get; set; }
         }
 
-        public int NewArt(string name, string code, string barcode, decimal tax, string unit, decimal cost, decimal listPrice, decimal minimunPrice, int idStatus, string description) 
+        public class Response
         {
-            ResponseApi apiResponse;
-            var art = new RestClient(urlApi+"/Guardar");
+            public string message { get; set; }
+            public int error { get; set; }
+            public Art data { get; set; }
+        }
 
-            var info = new
-            {
-                Articulo = name,
-                Codigo = code,
-                CodigoBarras = barcode,
-                Descripcion = description,
-                Impuesto1 = tax,
-                Unidad = unit,
-                Categoria = 1,
-                Costo = cost,
-                PrecioLista = listPrice,
-                PrecioMinimo = minimunPrice,
-                Estatus = idStatus,
-                Foto = ""
-            };
-
-            string json = JsonSerializer.Serialize(info);
+        public async Task<RestResponse> GetProducts(Object parameters)
+        {
+            var products = new RestClient(urlApi + "List");
             var request = new RestRequest();
+            request.Method = Method.Post;
 
-            request.AddJsonBody(json, "application/json");
+            request.AddJsonBody(parameters);
+
             try 
             {
-                var response = art.Post(request);
-                if (response.IsSuccessful)
-                {
-                    apiResponse = JsonSerializer.Deserialize<ResponseApi>(response.Content);
-                    MessageBox.Show(apiResponse.response);
-                    //MessageBox.Show(response.Content);
-                    return apiResponse.ok;
-                }
-                else
-                {
-                    MessageBox.Show("Entro else");
-                    apiResponse = JsonSerializer.Deserialize<ResponseApi>(response.Content);
-                    MessageBox.Show(apiResponse.response);
-                    //MessageBox.Show(response.Content);
-                    return apiResponse.ok;
-                }
+                var response = await products.ExecuteAsync(request);
 
+                return (RestResponse)response;
             }
             catch (Exception ex) 
             {
-                MessageBox.Show(ex.Message);
-                return 0;
+                return null;
             }
-
-            return 0; 
         }
+
+        public async Task<RestResponse> CreateProduct(Object parameters)
+        {
+            var product = new RestClient(urlApi + "create");
+            var request = new RestRequest();
+            request.Method = Method.Post;
+
+            request.AddJsonBody(parameters);
+
+            try
+            {
+                var response = await product.ExecuteAsync(request);
+                return (RestResponse)response;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        public async Task<RestResponse> UpdateProduct(Object parameters)
+        {
+            var product = new RestClient(urlApi + "update");
+            var request = new RestRequest();
+            request.Method = Method.Put;
+
+            request.AddJsonBody(parameters);
+
+            try
+            {
+
+                var response = await product.ExecuteAsync(request);
+
+                return (RestResponse)response;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
     }
 }

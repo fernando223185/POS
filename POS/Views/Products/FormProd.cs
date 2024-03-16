@@ -1,4 +1,6 @@
 ﻿using POS.Clases.Models;
+using POS.Views.Customers;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -6,6 +8,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,18 +17,17 @@ namespace POS
     public partial class FormProd : Form
     {
         Art art = new Art();
-        public FormProd(int opc)
+        public int ID { get; set; }
+
+        public FormProd(int id)
         {
             InitializeComponent();
-            if (opc == 1)
+            if (id > 0)
             {
-                this.lblTitulo.Text = "Nuevo Articulo";
+                //getCustomerID(id);
             }
-            if (opc == 2)
-            {
-                this.lblTitulo.Text = "Editar Articulo";
-            }
-            
+            ID = id;
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -46,31 +48,50 @@ namespace POS
             }
         }
 
-        private void btnNewProd_Click(object sender, EventArgs e)
+        private async void btnNewProd_Click(object sender, EventArgs e)
         {
-            string name = txtName.Text.Trim();
-            string code = txtCode.Text.Trim(); 
-            string barcode = txtBarcode.Text.Trim();   
-            decimal tax = decimal.Parse(txtTax.Text.Trim());
-            string unit = cmbUnit.Text.Trim();
-            decimal cost = decimal.Parse(txtCost.Text.Trim());
-            decimal listPrice = decimal.Parse(txtListPrice.Text);
-            decimal minimunPrice = decimal.Parse(txtMinimunPrice.Text);
-            int idStatus = 1;//int.Parse(cmbStatus.SelectedValue.ToString());
-            string description = txtDescription.Text.Trim();
+            var result = new RestResponse();
 
-            int ok = art.NewArt(name,code,barcode,tax,unit,cost,listPrice,minimunPrice,idStatus,description);
-            if (ok == 0)
+            if (ID > 0)
             {
-                txtName.Text = string.Empty;
-                txtCode.Text = string.Empty;
-                txtBarcode.Text = string.Empty;
-                txtListPrice.Text = string.Empty;
-                txtTax.Text = string.Empty;
-                txtCost.Text = string.Empty;
-                txtMinimunPrice.Text = string.Empty;
-                txtDescription.Text = string.Empty;
+                var parameters = new
+                {
+                    id = ID,
+                    name = this.txtName.Text,
+                    description = this.txtDescription.Text,
+                    code = this.txtCode.Text,
+                    barcode = this.txtBarcode.Text,
+                    price = this.txtListPrice.Text
+                };
 
+                result = await art.UpdateProduct(parameters);
+            }
+            else
+            {
+                var parameters = new
+                {
+                    name = this.txtName.Name,
+                    description = this.txtDescription.Text,
+                    code = this.txtCode.Text,
+                    barcode = this.txtBarcode.Text,
+                    price = this.txtListPrice.Text
+                };
+
+                result = await art.CreateProduct(parameters);
+            }
+
+            var response = JsonSerializer.Deserialize<Art.Response>(result.Content);
+            if (response.error == 0)
+            {
+                var message = MessageBox.Show(response.message, "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (message == DialogResult.OK)
+                {
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show(response.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }
