@@ -36,6 +36,9 @@ namespace POS
             this.WindowState = FormWindowState.Maximized;
             BtnRestaurar.Visible = true;
             BtnMaximizar.Visible = false;
+
+            AjustarFormularioHijo();
+
         }
 
         private void BtnRestaurar_Click(object sender, EventArgs e)
@@ -81,6 +84,27 @@ namespace POS
         private void button3_Click(object sender, EventArgs e)
         {
             AbrirFormInPanel(new Customer());
+        }
+
+        private void panelContendor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BarraTitulo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void AjustarFormularioHijo()
+        {
+            if (this.panelContendor.Controls.Count > 0)
+            {
+                Form fh = this.panelContendor.Controls[0] as Form;
+                if (fh != null)
+                {
+                    fh.Dock = DockStyle.Fill;
+                }
+            }
         }
     }
 }

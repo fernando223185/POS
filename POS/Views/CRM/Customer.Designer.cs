@@ -45,25 +45,22 @@
             // 
             // dataCte
             // 
-            this.dataCte.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataCte.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dataCte.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataCte.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataCte.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataCte.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataCte.ColumnHeadersHeight = 50;
             this.dataCte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataCte.EnableHeadersVisualStyles = false;
-            this.dataCte.Location = new System.Drawing.Point(77, 114);
+            this.dataCte.Location = new System.Drawing.Point(77, 110);
             this.dataCte.Name = "dataCte";
             this.dataCte.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataCte.RowHeadersVisible = false;
@@ -75,8 +72,9 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             this.dataCte.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataCte.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataCte.Size = new System.Drawing.Size(904, 383);
+            this.dataCte.Size = new System.Drawing.Size(913, 396);
             this.dataCte.TabIndex = 9;
+            this.dataCte.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataCte_CellContentClick);
             // 
             // label2
             // 
@@ -114,7 +112,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.label3.Location = new System.Drawing.Point(78, 36);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 19);
@@ -152,7 +150,7 @@
             // 
             // btnEditCustomer
             // 
-            this.btnEditCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnEditCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.btnEditCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditCustomer.FlatAppearance.BorderSize = 0;
             this.btnEditCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
@@ -171,7 +169,7 @@
             // 
             // btnNewProd
             // 
-            this.btnNewProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnNewProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.btnNewProd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNewProd.FlatAppearance.BorderSize = 0;
             this.btnNewProd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));

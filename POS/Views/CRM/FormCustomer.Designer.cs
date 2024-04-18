@@ -62,7 +62,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.lblTitulo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -116,7 +116,7 @@
             // 
             // btnNewProd
             // 
-            this.btnNewProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnNewProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.btnNewProd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNewProd.FlatAppearance.BorderSize = 0;
             this.btnNewProd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));

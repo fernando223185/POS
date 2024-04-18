@@ -133,5 +133,10 @@ namespace POS.Views.Customers
         {
             this.Close();
         }
+
+        private void dataCte_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

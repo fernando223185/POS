@@ -54,7 +54,7 @@
             // 
             // MenuVertical
             // 
-            this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.MenuVertical.Controls.Add(this.button8);
             this.MenuVertical.Controls.Add(this.button4);
             this.MenuVertical.Controls.Add(this.button3);
@@ -76,7 +76,7 @@
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Image = global::POS.Properties.Resources.venta1;
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(2, 304);
+            this.button8.Location = new System.Drawing.Point(2, 267);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(250, 40);
             this.button8.TabIndex = 4;
@@ -92,7 +92,7 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::POS.Properties.Resources.compras;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(1, 260);
+            this.button4.Location = new System.Drawing.Point(1, 223);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(250, 40);
             this.button4.TabIndex = 3;
@@ -108,7 +108,7 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = global::POS.Properties.Resources.clientes;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(1, 216);
+            this.button3.Location = new System.Drawing.Point(1, 179);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(250, 40);
             this.button3.TabIndex = 2;
@@ -125,7 +125,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::POS.Properties.Resources.venta;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(1, 171);
+            this.button2.Location = new System.Drawing.Point(1, 134);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(250, 40);
             this.button2.TabIndex = 1;
@@ -142,7 +142,7 @@
             this.btnprod.ForeColor = System.Drawing.Color.White;
             this.btnprod.Image = global::POS.Properties.Resources.producto;
             this.btnprod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnprod.Location = new System.Drawing.Point(1, 126);
+            this.btnprod.Location = new System.Drawing.Point(1, 89);
             this.btnprod.Name = "btnprod";
             this.btnprod.Size = new System.Drawing.Size(250, 40);
             this.btnprod.TabIndex = 0;
@@ -173,6 +173,7 @@
             this.BarraTitulo.Name = "BarraTitulo";
             this.BarraTitulo.Size = new System.Drawing.Size(1050, 50);
             this.BarraTitulo.TabIndex = 1;
+            this.BarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.BarraTitulo_Paint);
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
             // 
             // BtnRestaurar
@@ -242,13 +243,16 @@
             // 
             // panelContendor
             // 
-            this.panelContendor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelContendor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelContendor.AutoSize = true;
             this.panelContendor.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panelContendor.Location = new System.Drawing.Point(250, 50);
             this.panelContendor.Name = "panelContendor";
             this.panelContendor.Size = new System.Drawing.Size(1050, 600);
             this.panelContendor.TabIndex = 2;
+            this.panelContendor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContendor_Paint);
             // 
             // Menu
             // 
