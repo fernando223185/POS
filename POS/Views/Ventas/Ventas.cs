@@ -22,5 +22,11 @@ namespace POS
         {
             this.Close(); 
         }
+
+        private void btnNewProd_Click(object sender, EventArgs e)
+        {
+            PuntoVenta form = new PuntoVenta();
+            form.Show();
+        }
     }
 }

@@ -43,7 +43,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = global::POS.Properties.Resources.icons8_basura_30;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -60,7 +60,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::POS.Properties.Resources.icons8_lápiz_32;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -77,7 +77,7 @@
             this.btnNewProd.FlatAppearance.BorderSize = 0;
             this.btnNewProd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnNewProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewProd.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewProd.ForeColor = System.Drawing.Color.White;
             this.btnNewProd.Image = global::POS.Properties.Resources.venta1;
             this.btnNewProd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -87,6 +87,7 @@
             this.btnNewProd.TabIndex = 6;
             this.btnNewProd.Text = "NUEVO";
             this.btnNewProd.UseVisualStyleBackColor = false;
+            this.btnNewProd.Click += new System.EventHandler(this.btnNewProd_Click);
             // 
             // dataGridView1
             // 
