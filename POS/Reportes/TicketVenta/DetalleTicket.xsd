@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DetalleTicket" targetNamespace="http://tempuri.org/DetalleTicket.xsd" xmlns:mstns="http://tempuri.org/DetalleTicket.xsd" xmlns="http://tempuri.org/DetalleTicket.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DetalleTicket" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DetalleTicket" msprop:Generator_DataSetName="DetalleTicket">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="detailTicket" msprop:Generator_RowEvHandlerName="detailTicketRowChangeEventHandler" msprop:Generator_RowDeletedName="detailTicketRowDeleted" msprop:Generator_RowDeletingName="detailTicketRowDeleting" msprop:Generator_RowEvArgName="detailTicketRowChangeEvent" msprop:Generator_TablePropName="detailTicket" msprop:Generator_RowChangedName="detailTicketRowChanged" msprop:Generator_RowChangingName="detailTicketRowChanging" msprop:Generator_TableClassName="detailTicketDataTable" msprop:Generator_RowClassName="detailTicketRow" msprop:Generator_TableVarName="tabledetailTicket" msprop:Generator_UserTableName="detailTicket">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="priceUnit" msprop:Generator_ColumnPropNameInRow="priceUnit" msprop:Generator_ColumnPropNameInTable="priceUnitColumn" msprop:Generator_ColumnVarNameInTable="columnpriceUnit" msprop:Generator_UserColumnName="priceUnit" type="xs:string" minOccurs="0" />
+              <xs:element name="description" msprop:Generator_ColumnPropNameInRow="description" msprop:Generator_ColumnPropNameInTable="descriptionColumn" msprop:Generator_ColumnVarNameInTable="columndescription" msprop:Generator_UserColumnName="description" type="xs:string" minOccurs="0" />
+              <xs:element name="quantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_UserColumnName="quantity" type="xs:string" minOccurs="0" />
+              <xs:element name="import" msprop:Generator_ColumnPropNameInRow="import" msprop:Generator_ColumnPropNameInTable="importColumn" msprop:Generator_ColumnVarNameInTable="columnimport" msprop:Generator_UserColumnName="import" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

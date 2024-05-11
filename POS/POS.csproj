@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -86,6 +89,22 @@
     <Compile Include="Clases\Models\Art.cs" />
     <Compile Include="Clases\Models\CustomersClass.cs" />
     <Compile Include="Clases\Models\Users.cs" />
+    <Compile Include="Reportes\TicketVenta\DataTicket.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataTicket.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\TicketVenta\DetalleTicket.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetalleTicket.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\TicketVenta\TicketVenta.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TicketVenta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Views\CRM\Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +155,10 @@
     <Compile Include="Views\Ventas\Ventas.Designer.cs">
       <DependentUpon>Ventas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reportes\TicketVenta\TicketVenta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TicketVenta.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\CRM\Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,6 +208,28 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Reportes\TicketVenta\DataTicket.xsc">
+      <DependentUpon>DataTicket.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\TicketVenta\DataTicket.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataTicket.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\TicketVenta\DataTicket.xss">
+      <DependentUpon>DataTicket.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\TicketVenta\DetalleTicket.xsc">
+      <DependentUpon>DetalleTicket.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\TicketVenta\DetalleTicket.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DetalleTicket.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\TicketVenta\DetalleTicket.xss">
+      <DependentUpon>DetalleTicket.xsd</DependentUpon>
+    </None>
     <None Include="Resources\Close_Icon.png" />
   </ItemGroup>
   <ItemGroup>
@@ -276,6 +321,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\minimazar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reportes\Apertura\" />
+    <Folder Include="Reportes\Cierre\" />
+    <Folder Include="Reportes\Corte\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -26,7 +26,6 @@ C:\Users\Daniel\Source\Repos\POS\POS\bin\Debug\POS.exe.config
 C:\Users\Daniel\Source\Repos\POS\POS\bin\Debug\POS.exe
 C:\Users\Daniel\Source\Repos\POS\POS\bin\Debug\POS.pdb
 C:\Users\Daniel\Source\Repos\POS\POS\obj\Debug\POS.csproj.AssemblyReference.cache
-C:\Users\Daniel\Source\Repos\POS\POS\obj\Debug\POS.Form1.resources
 C:\Users\Daniel\Source\Repos\POS\POS\obj\Debug\POS.FormProd.resources
 C:\Users\Daniel\Source\Repos\POS\POS\obj\Debug\POS.Menu.resources
 C:\Users\Daniel\Source\Repos\POS\POS\obj\Debug\POS.Productos.resources
@@ -210,3 +209,8 @@ C:\Users\ferch\source\repos\fernando223185\POS\POS\obj\Debug\POS.csproj.CoreComp
 C:\Users\ferch\source\repos\fernando223185\POS\POS\obj\Debug\POS.csproj.CopyComplete
 C:\Users\ferch\source\repos\fernando223185\POS\POS\obj\Debug\POS.exe
 C:\Users\ferch\source\repos\fernando223185\POS\POS\obj\Debug\POS.pdb
+C:\Users\Daniel\Source\Repos\POS\POS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Daniel\Source\Repos\POS\POS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Daniel\Source\Repos\POS\POS\obj\Debug\POS.Views.Customers.Customer.resources
+C:\Users\Daniel\Source\Repos\POS\POS\obj\Debug\POS.Views.CRM.FormCustomer.resources
+C:\Users\Daniel\Source\Repos\POS\POS\obj\Debug\POS.Login.resources
