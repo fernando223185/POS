@@ -25,7 +25,7 @@ namespace POS
 
             // Agregar el manejador de eventos MouseDown al formulario
             this.MouseDown += new MouseEventHandler(Form_MouseDown);
-
+            createSale();
         }
 
         private void Form_MouseDown(object sender, MouseEventArgs e)
@@ -55,13 +55,20 @@ namespace POS
                 company_ID = 1,
                 mov = "Pedido",
                 moneda = "MXN",
-                user = user.NameUser,
-                customer = ""
+                user = "Fernando",
+                status = "SIN PROCESAR",
+                customer = "0"
             };
             result = await sales.CreateSale(parameters);
-
             var response = JsonSerializer.Deserialize<Sales_Orders.Response>(result.Content);
-            
+            if (response.error != 0)
+            {
+                var message = MessageBox.Show(response.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (message == DialogResult.OK)
+                {
+                    this.Close();
+                }
+            }
         }
 
         // Constantes para los mensajes de SendMessage
