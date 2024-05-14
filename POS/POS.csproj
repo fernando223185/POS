@@ -85,6 +85,7 @@
   <ItemGroup>
     <Compile Include="Clases\Models\Art.cs" />
     <Compile Include="Clases\Models\CustomersClass.cs" />
+    <Compile Include="Clases\Models\Sales_Orders.cs" />
     <Compile Include="Clases\Models\Users.cs" />
     <Compile Include="Views\CRM\Customer.cs">
       <SubType>Form</SubType>
