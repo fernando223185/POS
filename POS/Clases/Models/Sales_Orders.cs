@@ -11,22 +11,22 @@ namespace POS.Clases.Models
     {
         private string urlApi = "https://localhost:7254/api/Sales/";
 
-        public int ID { get; set; }
-        public int Company_ID { get; set; }
-        public string Mov { get; set; }
-        public string MovID { get; set; }
-        public DateTime FechaEmision { get; set; } 
-        public DateTime UltimoCambio { get; set; }
-        public string Moneda { get; set; }
-        public string User { get; set; }
-        public string Status { get; set; }
-        public string Customer { get; set; }
-        public string Warehouse { get; set; }
-        public decimal Importe { get; set; }
-        public decimal Impuestos { get; set; }
-        public decimal Saldo { get; set; }
-        public decimal Discount { get; set; }
-        public decimal PrecioTotal { get; set; }
+        public int id { get; set; }
+        public int company_ID { get; set; }
+        public string mov { get; set; }
+        public string movID { get; set; }
+        public DateTime fechaEmision { get; set; } 
+        public DateTime ultimoCambio { get; set; }
+        public string moneda { get; set; }
+        public string user { get; set; }
+        public string status { get; set; }
+        public string customer { get; set; }
+        public string warehouse { get; set; }
+        public decimal importe { get; set; }
+        public decimal impuestos { get; set; }
+        public decimal saldo { get; set; }
+        public decimal discount { get; set; }
+        public decimal precioTotal { get; set; }
 
         public class SalesResponse
         {
@@ -42,7 +42,7 @@ namespace POS.Clases.Models
         {
             public string message { get; set; }
             public int error { get; set; }
-            public Sales_Orders data { get; set; }
+            public Sales_Orders result { get; set; }
 
         }
 

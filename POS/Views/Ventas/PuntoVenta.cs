@@ -69,10 +69,16 @@ namespace POS
                     this.Close();
                 }
             }
+            this.TxtCte.Text = response.result.customer;
         }
 
         // Constantes para los mensajes de SendMessage
         private const int WM_NCLBUTTONDOWN = 0xA1;
         private const int HT_CAPTION = 0x2;
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
