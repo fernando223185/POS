@@ -11,7 +11,6 @@ namespace POS
     public partial class PuntoVenta : Form
     {
         Sales_Orders sales = new Sales_Orders();
-        User user = new User();
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -55,7 +54,7 @@ namespace POS
                 company_ID = 1,
                 mov = "Pedido",
                 moneda = "MXN",
-                user = "Fernando",
+                user = User.CurrentUser.user.nameUser,
                 status = "SIN PROCESAR",
                 customer = "0"
             };

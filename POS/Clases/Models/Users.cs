@@ -6,19 +6,20 @@ namespace POS.Clases
 {
     public class User
     {
-        public int IdProduct { get; set; }
-        public string Code { get; set; }
-        public string NameUser { get; set; }
-        public string Pass { get; set; }
-        public string NameP { get; set; }
-        public string LastNameP { get; set; }
-        public string Correo { get; set; }
-        public string Telefono { get; set; }
+        public int id { get; set; }
+        public string code { get; set; }
+        public string nameUser { get; set; }
+        public string pass { get; set; }
+        public string nameP { get; set; }
+        public string lastNameP { get; set; }
+        public string correo { get; set; }
+        public string telefono { get; set; }
         public int IdDepartamento { get; set; }
         public DateTime DateRegistro { get; set; }
         public int IdEstatus { get; set; }
 
         private string urlApi = "https://localhost:7254/api/Login/login"; //Url para la api de users
+        public static ResponseApi CurrentUser { get; set; }
 
         public class ResponseApi
         {
